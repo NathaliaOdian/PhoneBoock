@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using AppPhone.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace AppPhone
@@ -11,7 +12,8 @@ namespace AppPhone
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new PhoneBookPage();
         }
 
         protected override void OnStart()
